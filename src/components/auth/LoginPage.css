@@ -1,0 +1,121 @@
+.login-container {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: none;
+  }
+  
+  .brand-name {
+    color: #7952B3;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: sans-serif,'Saira Stencil One', 'Brush Script MT', cursive;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 10px;
+  }
+  
+  .sign-in-text {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .form-control {
+    height: 50px;
+    padding-left: 15px;
+    border-color: #e9ecef;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #7952B3;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  .remember-me {
+    color: #6c757d;
+  }
+  
+  .forgot-password {
+    color: #7952B3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .sign-in-btn {
+    height: 50px;
+    background-color: #7952B3;
+    border-color: #7952B3;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #6942a4;
+    border-color: #6942a4;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #adb5bd;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+  }
+  
+  .social-btn {
+    border: 1px solid #e9ecef;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+  .create-account {
+    color: #7952B3;
+    text-decoration: none;
+    font-weight: 500;
+  }

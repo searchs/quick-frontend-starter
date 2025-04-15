@@ -44,3 +44,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+Usage of useAPI -useAuth hook
+```typescript
+
+// For public API endpoints
+const { data, loading, error } = useAPI('/public-data');
+
+// For authenticated endpoints
+const { data, loading, error } = useAPI('/protected-data', { requireAuth: true });
+
+// To make manual requests
+const { post } = useAPI(undefined, { requireAuth: true });
+const handleSubmit = async () => {
+  const result = await post('/api/resources', { name: 'New Item' });
+  // Handle result
+};
+```

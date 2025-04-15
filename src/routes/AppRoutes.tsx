@@ -5,6 +5,7 @@ import AppLayout from '../components/layout/AppLayout';
 import LoginPage from '../components/auth/LoginPage';
 import Dashboard from '../components/dashboard/Dashboard';
 import DigitalAgencyLanding from '../components/pages/Landing';
+import NotFound from '../components/pages/NotFound';
 
 // Example protected route component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -27,7 +28,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
       <Route path="/" element={<DigitalAgencyLanding />} />
       
-      <Route path="/" element={
+      <Route path="/o" element={
         <ProtectedRoute>
           <AppLayout>
             <Dashboard />
@@ -36,7 +37,8 @@ const AppRoutes: React.FC = () => {
       } />
       
       {/* Add more routes as needed */}
-      <Route path="*" element={<Navigate to="/" replace />} />
+      {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+      {/* <Route path="*" element={<NotFound />} /> */}
     </Routes>
   );
 };

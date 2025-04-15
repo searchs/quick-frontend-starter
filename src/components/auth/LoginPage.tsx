@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import { Form, Button, Container, Card, Row, Col } from 'react-bootstrap';
 import { Google, Facebook, Apple } from 'react-bootstrap-icons';
 import './LoginPage.css';
-// import { useAuth } from '../../contexts/AuthContext';
 
 interface LoginPageProps {
   onLogin: () => void;
 }
 
 const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
-  // const auth = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);

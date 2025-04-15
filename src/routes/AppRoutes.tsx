@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth';
 import AppLayout from '../components/layout/AppLayout';
 import LoginPage from '../components/auth/LoginPage';
 import Dashboard from '../components/dashboard/Dashboard';
+import DigitalAgencyLanding from '../components/pages/Landing';
 
 // Example protected route component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -24,6 +25,7 @@ const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
+      <Route path="/" element={<DigitalAgencyLanding />} />
       
       <Route path="/" element={
         <ProtectedRoute>
